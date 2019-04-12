@@ -15,7 +15,7 @@ class GridMember : public tp_data::AbstractMember
 {
 public:
   //################################################################################################
-  GridMember(const std::string& name);
+  GridMember(const std::string& name=std::string());
 
   tp_image_utils::Grid data;
 };

@@ -15,7 +15,7 @@ class ByteMapMember : public tp_data::AbstractMember
 {
 public:
   //################################################################################################
-  ByteMapMember(const std::string& name);
+  ByteMapMember(const std::string& name=std::string());
 
   tp_image_utils::ByteMap data;
 };
