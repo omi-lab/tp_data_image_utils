@@ -16,7 +16,7 @@ TDP_DECLARE_ID(                     colorMapSID,                        "Color m
 TDP_DECLARE_ID(                      byteMapSID,                         "Byte map")
 
 //##################################################################################################
-//! Add the collection factories that this module provides to the StepDelegateMap
+//! Add the collection factories that this module provides to the CollectionFactory
 void createCollectionFactories(tp_data::CollectionFactory& collectionFactory);
 
 }
