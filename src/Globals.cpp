@@ -15,4 +15,12 @@ void createCollectionFactories(tp_data::CollectionFactory& collectionFactory)
   collectionFactory.addMemberFactory(new ColorMapMemberFactory());
 }
 
+REGISTER_CREATE_COLLECTION_FACTORIES;
+
+//##################################################################################################
+int staticInit()
+{
+  return 0;
+}
+
 }
