@@ -3,4 +3,4 @@ DEPENDENCIES += tp_image_utils
 INCLUDEPATHS += tp_data_image_utils/inc/
 LIBRARIES    += tp_data_image_utils
 
-TP_STATIC_INIT += wrldcv_pipeline_theia
+TP_STATIC_INIT += tp_data_image_utils
