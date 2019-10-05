@@ -12,8 +12,8 @@ class CollectionFactory;
 //! Pipeline step delegates for processing images using tp_image_utils
 namespace tp_data_image_utils
 {
-tp_qt_DECLARE_ID(                     colorMapSID,                        "Color map");
-tp_qt_DECLARE_ID(                      byteMapSID,                         "Byte map");
+TP_DECLARE_ID(                     colorMapSID,                        "Color map");
+TP_DECLARE_ID(                      byteMapSID,                         "Byte map");
 
 //##################################################################################################
 //! Add the collection factories that this module provides to the CollectionFactory

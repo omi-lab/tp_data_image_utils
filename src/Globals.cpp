@@ -6,8 +6,8 @@
 //##################################################################################################
 namespace tp_data_image_utils
 {
-tp_qt_DEFINE_ID(                     colorMapSID,                        "Color map");
-tp_qt_DEFINE_ID(                      byteMapSID,                         "Byte map");
+TP_DEFINE_ID(                     colorMapSID,                        "Color map");
+TP_DEFINE_ID(                      byteMapSID,                         "Byte map");
 
 //##################################################################################################
 void createCollectionFactories(tp_data::CollectionFactory& collectionFactory)
