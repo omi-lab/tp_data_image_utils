@@ -13,6 +13,7 @@ class CollectionFactory;
 namespace tp_data_image_utils
 {
 TP_DECLARE_ID(                     colorMapSID,                        "Color map");
+TP_DECLARE_ID(                    colorMapFSID,                      "Color map f");
 TP_DECLARE_ID(                      byteMapSID,                         "Byte map");
 
 //##################################################################################################

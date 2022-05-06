@@ -7,6 +7,7 @@
 namespace tp_data_image_utils
 {
 TP_DEFINE_ID(                     colorMapSID,                        "Color map");
+TP_DEFINE_ID(                    colorMapFSID,                      "Color map f");
 TP_DEFINE_ID(                      byteMapSID,                         "Byte map");
 
 //##################################################################################################
