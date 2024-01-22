@@ -15,7 +15,7 @@ class ColorMapFMember : public tp_data::AbstractMember
 {
 public:
   //################################################################################################
-  ColorMapFMember(const std::string& name=std::string());
+  ColorMapFMember(const tp_utils::StringID& name=tp_utils::StringID());
 
   tp_image_utils::ColorMapF data;
 };

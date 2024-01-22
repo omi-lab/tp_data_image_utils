@@ -3,7 +3,7 @@
 namespace tp_data_image_utils
 {
 //##################################################################################################
-ColorMapMember::ColorMapMember(const std::string& name):
+ColorMapMember::ColorMapMember(const tp_utils::StringID& name):
   tp_data::AbstractMember(name, colorMapSID())
 {
 

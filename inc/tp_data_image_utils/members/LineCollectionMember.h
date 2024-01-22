@@ -15,7 +15,7 @@ class LineCollectionMember : public tp_data::AbstractMember
 {
 public:
   //################################################################################################
-  LineCollectionMember(const std::string& name=std::string());
+  LineCollectionMember(const tp_utils::StringID& name=tp_utils::StringID());
 
   tp_image_utils::LineCollection data;
 };

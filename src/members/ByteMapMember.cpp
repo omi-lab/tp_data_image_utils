@@ -3,7 +3,7 @@
 namespace tp_data_image_utils
 {
 //##################################################################################################
-ByteMapMember::ByteMapMember(const std::string& name):
+ByteMapMember::ByteMapMember(const tp_utils::StringID& name):
   tp_data::AbstractMember(name, byteMapSID())
 {
 
