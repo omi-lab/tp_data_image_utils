@@ -17,6 +17,9 @@ public:
   //################################################################################################
   ColorMapFMember(const tp_utils::StringID& name=tp_utils::StringID());
 
+  //################################################################################################
+  void setImage(const tp_image_utils::ColorMapF& img);
+
   tp_image_utils::ColorMapF data;
 };
 

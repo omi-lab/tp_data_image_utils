@@ -10,4 +10,11 @@ ColorMapMember::ColorMapMember(const tp_utils::StringID& name, const tp_image_ut
 
 }
 
+//##################################################################################################
+void ColorMapMember::setImage(const tp_image_utils::ColorMap& img)
+{
+  data = img;
+}
+
+
 }
