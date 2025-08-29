@@ -17,13 +17,13 @@ public:
   ColorMapMemberFactory();
 
   //################################################################################################
-  tp_data::AbstractMember* clone(std::string& error, const tp_data::AbstractMember& member) const override;
+  std::shared_ptr<tp_data::AbstractMember> clone(std::string& error, const tp_data::AbstractMember& member) const override;
 
   //################################################################################################
   void save(std::string& error, const tp_data::AbstractMember& member, std::string& data) const override;
 
   //################################################################################################
-  tp_data::AbstractMember* load(std::string& error, const std::string& data) const override;
+  std::shared_ptr<tp_data::AbstractMember> load(std::string& error, const std::string& data) const override;
 };
 
 }

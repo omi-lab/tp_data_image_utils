@@ -15,6 +15,8 @@ namespace tp_data_image_utils
 TP_DECLARE_ID(                     colorMapSID,                        "Color map");
 TP_DECLARE_ID(                    colorMapFSID,                      "Color map f");
 TP_DECLARE_ID(                      byteMapSID,                         "Byte map");
+TP_DECLARE_ID(               lineCollectionSID,                  "Line collection");
+TP_DECLARE_ID(                         gridSID,                             "Grid");
 
 //##################################################################################################
 //! Add the collection factories that this module provides to the CollectionFactory

@@ -9,6 +9,8 @@ namespace tp_data_image_utils
 TP_DEFINE_ID(                     colorMapSID,                        "Color map");
 TP_DEFINE_ID(                    colorMapFSID,                      "Color map f");
 TP_DEFINE_ID(                      byteMapSID,                         "Byte map");
+TP_DEFINE_ID(               lineCollectionSID,                  "Line collection");
+TP_DEFINE_ID(                         gridSID,                             "Grid");
 
 //##################################################################################################
 void createCollectionFactories(tp_data::CollectionFactory& collectionFactory)

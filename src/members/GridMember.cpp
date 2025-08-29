@@ -4,7 +4,7 @@ namespace tp_data_image_utils
 {
 //##################################################################################################
 GridMember::GridMember(const tp_utils::StringID& name):
-  tp_data::AbstractMember(name, byteMapSID())
+  tp_data::AbstractMember(name, gridSID())
 {
 
 }

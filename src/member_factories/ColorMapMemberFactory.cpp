@@ -15,7 +15,7 @@ ColorMapMemberFactory::ColorMapMemberFactory():
 }
 
 //##################################################################################################
-tp_data::AbstractMember* ColorMapMemberFactory::clone(std::string& error, const tp_data::AbstractMember& member) const
+std::shared_ptr<tp_data::AbstractMember> ColorMapMemberFactory::clone(std::string& error, const tp_data::AbstractMember& member) const
 {
   auto m = dynamic_cast<const ColorMapMember*>(&member);
   if(!m)
@@ -26,7 +26,7 @@ tp_data::AbstractMember* ColorMapMemberFactory::clone(std::string& error, const 
 
   auto n = new ColorMapMember(m->name());
   n->data = m->data;
-  return n;
+  return std::shared_ptr<tp_data::AbstractMember>(n);
 }
 
 //##################################################################################################
@@ -43,12 +43,12 @@ void ColorMapMemberFactory::save(std::string& error, const tp_data::AbstractMemb
 }
 
 //##################################################################################################
-tp_data::AbstractMember* ColorMapMemberFactory::load(std::string& error, const std::string& data) const
+std::shared_ptr<tp_data::AbstractMember> ColorMapMemberFactory::load(std::string& error, const std::string& data) const
 {
   TP_UNUSED(error);
   auto n = new ColorMapMember();
   n->data = tp_image_utils::loadImageFromData(data);
-  return n;
+  return std::shared_ptr<tp_data::AbstractMember>(n);
 }
 
 }
