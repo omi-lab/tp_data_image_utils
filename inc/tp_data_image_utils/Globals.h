@@ -1,7 +1,13 @@
-#ifndef tp_data_image_utils_Globals_h
-#define tp_data_image_utils_Globals_h
+#pragma once
 
 #include "tp_utils/StringID.h"
+
+
+#if defined(TP_DATA_IMAGE_UTILS_LIBRARY)
+#  define TP_DATA_IMAGE_UTILS_SHARED_EXPORT TP_EXPORT
+#else
+#  define TP_DATA_IMAGE_UTILS_SHARED_EXPORT TP_IMPORT
+#endif
 
 namespace tp_data
 {
@@ -27,5 +33,3 @@ void createCollectionFactories(tp_data::CollectionFactory& collectionFactory);
 int staticInit();
 
 }
-
-#endif

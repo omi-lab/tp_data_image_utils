@@ -21,7 +21,3 @@ HEADERS += inc/tp_data_image_utils/members/LineCollectionMember.h
 
 SOURCES += src/members/GridMember.cpp
 HEADERS += inc/tp_data_image_utils/members/GridMember.h
-
-#-- Member Factories -------------------------------------------------------------------------------
-SOURCES += src/member_factories/ColorMapMemberFactory.cpp
-HEADERS += inc/tp_data_image_utils/member_factories/ColorMapMemberFactory.h
