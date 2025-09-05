@@ -25,6 +25,7 @@ void ColorMapMember::setImage(const tp_image_utils::ColorMap& img)
 //##################################################################################################
 ColorMapMember* ColorMapMember::fromData(std::string& error, const std::string& data)
 {
+  TP_UNUSED(error);
   auto n = new ColorMapMember();
   n->data = tp_image_utils::loadImageFromData(data);
   return n;

@@ -21,3 +21,6 @@ HEADERS += inc/tp_data_image_utils/members/LineCollectionMember.h
 
 SOURCES += src/members/GridMember.cpp
 HEADERS += inc/tp_data_image_utils/members/GridMember.h
+
+SOURCES += src/members/TexturedGeometry3DMember.cpp
+HEADERS += inc/tp_data_image_utils/members/TexturedGeometry3DMember.h

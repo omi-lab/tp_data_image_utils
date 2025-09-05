@@ -15,6 +15,8 @@ ByteMapMember::ByteMapMember(const tp_utils::StringID& name):
 //##################################################################################################
 ByteMapMember* ByteMapMember::fromData(std::string& error, const std::string& data)
 {
+  TP_UNUSED(error);
+  TP_UNUSED(data);
   return nullptr;
 }
 

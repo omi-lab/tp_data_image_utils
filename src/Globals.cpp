@@ -4,6 +4,7 @@
 #include "tp_data_image_utils/members/ColorMapFMember.h"
 #include "tp_data_image_utils/members/GridMember.h"
 #include "tp_data_image_utils/members/LineCollectionMember.h"
+#include "tp_data_image_utils/members/TexturedGeometry3DMember.h"
 
 #include "tp_data/CollectionFactory.h"
 
@@ -15,15 +16,17 @@ TP_DEFINE_ID(                    colorMapFSID,                      "Color map f
 TP_DEFINE_ID(                      byteMapSID,                         "Byte map");
 TP_DEFINE_ID(               lineCollectionSID,                  "Line collection");
 TP_DEFINE_ID(                         gridSID,                             "Grid");
+TP_DEFINE_ID(           texturedGeometry3DSID,             "Textured geometry 3d");
 
 //##################################################################################################
 void createCollectionFactories(tp_data::CollectionFactory& collectionFactory)
 {
-  collectionFactory.addMemberFactory(new ByteMapMemberFactory        ({184, 130, 137}));
-  collectionFactory.addMemberFactory(new ColorMapFMemberFactory      ({209,  13,  38}));
-  collectionFactory.addMemberFactory(new ColorMapMemberFactory       ({227,  64,  85}));
-  collectionFactory.addMemberFactory(new GridMemberFactory           ({235, 135,  35}));
-  collectionFactory.addMemberFactory(new LineCollectionMemberFactory ({184,  99,  15}));
+  collectionFactory.addMemberFactory(new ByteMapMemberFactory           ({184, 130, 137}));
+  collectionFactory.addMemberFactory(new ColorMapFMemberFactory         ({209,  13,  38}));
+  collectionFactory.addMemberFactory(new ColorMapMemberFactory          ({227,  64,  85}));
+  collectionFactory.addMemberFactory(new GridMemberFactory              ({235, 135,  35}));
+  collectionFactory.addMemberFactory(new LineCollectionMemberFactory    ({184,  99,  15}));
+  collectionFactory.addMemberFactory(new TexturedGeometry3DMemberFactory({237, 158,  21}));
 }
 
 REGISTER_CREATE_COLLECTION_FACTORIES;

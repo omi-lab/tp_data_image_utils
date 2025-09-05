@@ -23,6 +23,7 @@ TP_DECLARE_ID(                    colorMapFSID,                      "Color map 
 TP_DECLARE_ID(                      byteMapSID,                         "Byte map");
 TP_DECLARE_ID(               lineCollectionSID,                  "Line collection");
 TP_DECLARE_ID(                         gridSID,                             "Grid");
+TP_DECLARE_ID(           texturedGeometry3DSID,             "Textured geometry 3d");
 
 //##################################################################################################
 //! Add the collection factories that this module provides to the CollectionFactory

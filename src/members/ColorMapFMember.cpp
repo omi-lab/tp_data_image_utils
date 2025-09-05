@@ -15,6 +15,8 @@ ColorMapFMember::ColorMapFMember(const tp_utils::StringID& name):
 //##################################################################################################
 ColorMapFMember* ColorMapFMember::fromData(std::string& error, const std::string& data)
 {
+  TP_UNUSED(error);
+  TP_UNUSED(data);
   return nullptr;
 }
 
